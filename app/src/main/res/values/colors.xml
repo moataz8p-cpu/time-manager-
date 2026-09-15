@@ -1,0 +1,11 @@
+<resources>
+    <!-- Core Visual Identity -->
+    <color name="waqt_beige">#E7C690</color>
+    <color name="waqt_green">#4AA690</color>
+    <color name="waqt_green_dark">#377C6B</color>
+    <color name="waqt_dark_brown">#2C221E</color>
+    <color name="waqt_off_white">#FAF8F5</color>
+    <color name="waqt_light_green">#E3F5EE</color>
+    <color name="waqt_surface_light">#FFFFFF</color>
+    <color name="waqt_surface_dark">#201915</color>
+</resources>

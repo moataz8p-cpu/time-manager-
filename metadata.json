@@ -1,0 +1,6 @@
+{
+  "name": "منظم الوقت والجدول الأسبوعي",
+  "description": "تطبيق أندرويد متكامل لإدارة وتنظيم الوقت أسبوعياً، مع جدولة المهام التراكمية، إزاحة الطوارئ، مؤقتات بومودورو، مواقيت الصلاة والأذكار، ومساعد الذكاء الاصطناعي.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

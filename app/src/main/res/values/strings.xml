@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">منظم الوقت</string>
+    <string name="screen_home">الرئيسية</string>
+    <string name="screen_schedule">تنظيم الوقت والجدول الأسبوعي</string>
+    <string name="screen_prayer">مواقيت الصلاة، الأذكار، والقرآن</string>
+    <string name="screen_ai">المساعد الذكي</string>
+    <string name="screen_settings">الإعدادات</string>
+    <string name="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</string>
+    <string name="start_organizing">يلا ننظم وقتنا</string>
+    <string name="emergency_shift">Emergency Shift</string>
+    <string name="essential_tasks">المهام الأساسية</string>
+    <string name="development_tasks">مهام التطوير</string>
+    <string name="buffer_title">وقت الاحتياط (Buffer)</string>
+    <string name="confirm">تأكيد</string>
+    <string name="cancel">إلغاء</string>
+</resources>
