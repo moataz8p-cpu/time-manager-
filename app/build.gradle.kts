@@ -64,18 +64,16 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended:1.6.5")
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
-    // Room Database
+    // 1. قاعدة بيانات Room
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
 
-    // DataStore Preferences
+    // 2. تخزين الإعدادات DataStore
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
-    // WorkManager & Background tasks
+    // 3. إدارة المهام في الخلفية والمؤقت
     implementation("androidx.work:work-runtime-ktx:2.9.0")
-
-    // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
