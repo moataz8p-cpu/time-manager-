@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.WaqtOrganizer" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/waqt_surface_dark</item>
+        <item name="android:navigationBarColor">@color/waqt_surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.TimeManager" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/waqt_surface_dark</item>
+        <item name="android:navigationBarColor">@color/waqt_surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

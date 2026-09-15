@@ -5,7 +5,7 @@
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <!-- تعريف Theme.TimeManager المتوافق مع AndroidManifest -->
+    <!-- Theme alias for projects referencing Theme.TimeManager in AndroidManifest.xml -->
     <style name="Theme.TimeManager" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/waqt_off_white</item>
         <item name="android:navigationBarColor">@color/waqt_off_white</item>
