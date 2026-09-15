@@ -32,7 +32,7 @@ data class TaskEntity(
             durationMinutes = durationMinutes,
             endTime = endTime,
             isPomodoro = isPomodoro,
-            category = TaskCategory.values().firstOrNull { it.name == category } ?: TaskCategory.HABIT,
+            category = TaskCategory.values().firstOrNull { it.name == category } ?: TaskCategory.ESSENTIAL,
             developmentType = developmentType?.let { typeStr ->
                 DevelopmentType.values().firstOrNull { it.name == typeStr }
             },
