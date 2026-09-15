@@ -54,10 +54,14 @@ fun WaqtTheme(
     val view = LocalView.current
     if (!view.isInEditMode) {
         SideEffect {
-            val activity = view.context.findActivity()
-            activity?.window?.let { window ->
-                window.statusBarColor = colorScheme.background.toArgb()
-                WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
+            try {
+                val activity = view.context.findActivity()
+                activity?.window?.let { window ->
+                    window.statusBarColor = colorScheme.background.toArgb()
+                    WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
+                }
+            } catch (_: Throwable) {
+                // Ignore any system insets / window controller exceptions on specialized OEM ROMs
             }
         }
     }

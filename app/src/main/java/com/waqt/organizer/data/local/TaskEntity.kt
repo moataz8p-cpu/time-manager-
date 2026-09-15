@@ -32,8 +32,10 @@ data class TaskEntity(
             durationMinutes = durationMinutes,
             endTime = endTime,
             isPomodoro = isPomodoro,
-            category = TaskCategory.valueOf(category),
-            developmentType = developmentType?.let { DevelopmentType.valueOf(it) },
+            category = TaskCategory.values().firstOrNull { it.name == category } ?: TaskCategory.HABIT,
+            developmentType = developmentType?.let { typeStr ->
+                DevelopmentType.values().firstOrNull { it.name == typeStr }
+            },
             cumulativeOrder = cumulativeOrder,
             isCompleted = isCompleted,
             createdAt = createdAt

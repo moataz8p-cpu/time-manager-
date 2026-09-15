@@ -19,30 +19,35 @@ object NotificationHelper {
 
     fun createNotificationChannels(context: Context) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            try {
+                val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as? NotificationManager
+                    ?: return
 
-            // 1. Timer Channel (Ongoing, silent or low interruption while running)
-            val timerChannel = NotificationChannel(
-                CHANNEL_TIMER_ID,
-                "مؤقت المهام والجلسات",
-                NotificationManager.IMPORTANCE_LOW
-            ).apply {
-                description = "عرض الوقت المتبقي للمهمة النشطة وجلسات البومودورو"
-                setShowBadge(true)
+                // 1. Timer Channel (Ongoing, silent or low interruption while running)
+                val timerChannel = NotificationChannel(
+                    CHANNEL_TIMER_ID,
+                    "مؤقت المهام والجلسات",
+                    NotificationManager.IMPORTANCE_LOW
+                ).apply {
+                    description = "عرض الوقت المتبقي للمهمة النشطة وجلسات البومودورو"
+                    setShowBadge(true)
+                }
+
+                // 2. Prayer & Alerts Channel (High importance)
+                val prayerChannel = NotificationChannel(
+                    CHANNEL_PRAYER_ID,
+                    "تنبيهات الصلاة والأذكار",
+                    NotificationManager.IMPORTANCE_HIGH
+                ).apply {
+                    description = "تنبيهات دخول مواقيت الصلاة وأذكار الصباح والمساء"
+                    enableVibration(true)
+                }
+
+                notificationManager.createNotificationChannel(timerChannel)
+                notificationManager.createNotificationChannel(prayerChannel)
+            } catch (_: Throwable) {
+                // Ignore failure to create notification channels
             }
-
-            // 2. Prayer & Alerts Channel (High importance)
-            val prayerChannel = NotificationChannel(
-                CHANNEL_PRAYER_ID,
-                "تنبيهات الصلاة والأذكار",
-                NotificationManager.IMPORTANCE_HIGH
-            ).apply {
-                description = "تنبيهات دخول مواقيت الصلاة وأذكار الصباح والمساء"
-                enableVibration(true)
-            }
-
-            notificationManager.createNotificationChannel(timerChannel)
-            notificationManager.createNotificationChannel(prayerChannel)
         }
     }
 
