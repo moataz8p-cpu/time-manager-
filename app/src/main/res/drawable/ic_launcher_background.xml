@@ -12,6 +12,6 @@
     <!-- Subtle soft circular depth aura -->
     <path
         android:fillColor="#3D8E7B"
-        android:pathData="M54,20 A34,34 0 1,0 54,88 A34,34 0 1,0 54,20 Z"
+        android:pathData="M 54,54 m -34,0 a 34,34 0 1,0 68,0 a 34,34 0 1,0 -68,0"
         android:fillAlpha="0.3" />
 </vector>

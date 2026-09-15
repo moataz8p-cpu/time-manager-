@@ -7,30 +7,30 @@
 
     <!-- Subtle Ambient Outer Weekly Rhythm Ring -->
     <path
-        android:pathData="M 54,22 A 32,32 0 1,0 54,86 A 32,32 0 1,0 54,22 Z"
+        android:pathData="M 54,54 m -32,0 a 32,32 0 1,0 64,0 a 32,32 0 1,0 -64,0"
         android:strokeColor="#FAF8F5"
         android:strokeWidth="1.2"
         android:strokeAlpha="0.2" />
 
     <!-- Clock / Planner Circle (Warm Beige #E7C690) -->
     <path
-        android:pathData="M 54,27 A 27,27 0 1,0 54,81 A 27,27 0 1,0 54,27 Z"
+        android:pathData="M 54,54 m -27,0 a 27,27 0 1,0 54,0 a 27,27 0 1,0 -54,0"
         android:strokeColor="#E7C690"
         android:strokeWidth="2.8"
         android:strokeLineCap="round" />
 
     <!-- 4 Cardinal Time/Day Dots (#E7C690) -->
     <path
-        android:pathData="M 54,24 A 1.5,1.5 0 1,0 54,27 A 1.5,1.5 0 1,0 54,24 Z"
+        android:pathData="M 54,25.5 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0"
         android:fillColor="#E7C690" />
     <path
-        android:pathData="M 81,52.5 A 1.5,1.5 0 1,0 81,55.5 A 1.5,1.5 0 1,0 81,52.5 Z"
+        android:pathData="M 81,54 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0"
         android:fillColor="#E7C690" />
     <path
-        android:pathData="M 54,81 A 1.5,1.5 0 1,0 54,84 A 1.5,1.5 0 1,0 54,81 Z"
+        android:pathData="M 54,82.5 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0"
         android:fillColor="#E7C690" />
     <path
-        android:pathData="M 27,52.5 A 1.5,1.5 0 1,0 27,55.5 A 1.5,1.5 0 1,0 27,52.5 Z"
+        android:pathData="M 27,54 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0"
         android:fillColor="#E7C690" />
 
     <!-- Clock Indicator Hand pointing to 2 o'clock (#E7C690) -->
@@ -50,10 +50,10 @@
 
     <!-- Center Clock Pivot (Dark Brown Core #2D2319 & Off-White Pin #FAF8F5) -->
     <path
-        android:pathData="M 54,51.5 A 2.5,2.5 0 1,0 54,56.5 A 2.5,2.5 0 1,0 54,51.5 Z"
+        android:pathData="M 54,54 m -2.5,0 a 2.5,2.5 0 1,0 5,0 a 2.5,2.5 0 1,0 -5,0"
         android:fillColor="#2D2319" />
     <path
-        android:pathData="M 54,53 A 1,1 0 1,0 54,55 A 1,1 0 1,0 54,53 Z"
+        android:pathData="M 54,54 m -1,0 a 1,1 0 1,0 2,0 a 1,1 0 1,0 -2,0"
         android:fillColor="#FAF8F5" />
 
 </vector>
