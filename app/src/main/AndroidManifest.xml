@@ -10,8 +10,8 @@
         android:label="Time Manager"
         android:supportsRtl="true"
         android:theme="@style/Theme.TimeManager"
-        android:icon="@android:drawable/sym_def_app_icon"
-        android:roundIcon="@android:drawable/sym_def_app_icon">
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round">
 
         <activity
             android:name=".ui.MainActivity"
